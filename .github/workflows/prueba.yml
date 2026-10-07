@@ -8,29 +8,21 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - name: Comprobar variable local
-        shell: powershell
-        run: |
-          if ([string]::IsNullOrEmpty($env:LOCAL_DEV_TOKEN)) {
-            Write-Host "LOCAL_DEV_TOKEN NO está disponible"
-            exit 1
-          } else {
-            Write-Host "LOCAL_DEV_TOKEN está disponible"
-          }
-
-      - name: Comparar tokens
+      - name: Comprobar longitudes
         shell: powershell
         env:
           DEV_TOKEN: ${{ secrets.DEV_TOKEN }}
         run: |
+          Write-Host "Longitud DEV_TOKEN: $($env:DEV_TOKEN.Length)"
+          Write-Host "Longitud LOCAL_DEV_TOKEN: $($env:LOCAL_DEV_TOKEN.Length)"
+
           if ($env:DEV_TOKEN -eq $env:LOCAL_DEV_TOKEN) {
             Write-Host "Los tokens coinciden"
           } else {
             Write-Host "Los tokens NO coinciden"
             exit 1
           }
-
-            Write-Host "Los tokens coinciden"
+nciden"
           } else {
             Write-Host "Los tokens NO coinciden"
           }
