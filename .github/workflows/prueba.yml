@@ -15,13 +15,7 @@ jobs:
         run: |
           if ($env:DEV_TOKEN -eq $env:LOCAL_DEV_TOKEN) {
             Write-Host "Los tokens coinciden"
-          }
-          else {
-            Write-Host "Los tokens NO coinciden"
-            exit 1
-          }
-
-
           } else {
             Write-Host "Los tokens NO coinciden"
+            exit 1
           }
