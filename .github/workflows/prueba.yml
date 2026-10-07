@@ -22,7 +22,7 @@ jobs:
             Write-Host "Los tokens NO coinciden"
             exit 1
           }
-nciden"
+
           } else {
             Write-Host "Los tokens NO coinciden"
           }
