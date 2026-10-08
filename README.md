@@ -6,3 +6,4 @@ AppVersion-0
 - Añadida feature: feature-mi-feature- Añadida feature: develop
 - AppVersion-3 - 08/10/2026 12:09
 - AppVersion-4 - 08/10/2026 12:15
+- AppVersion-5 - 08/10/2026 12:29
