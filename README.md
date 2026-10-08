@@ -4,3 +4,4 @@ AppVersion-0
 - Añadida feature: main
 - Añadida feature: develop
 - Añadida feature: feature-mi-feature- Añadida feature: develop
+- AppVersion-3 - 08/10/2026 12:09
