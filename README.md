@@ -9,3 +9,4 @@ AppVersion-0
 - AppVersion-5 - 08/10/2026 12:29
 - AppVersion-6 - 08/10/2026 12:31
 - AppVersion-7 - 08/10/2026 12:32
+- Añadida feature: main
